@@ -118,9 +118,12 @@ namespace proga2
 
         private void btn_plus_Click(object sender, RoutedEventArgs e)
         {
-            firstNumber = decimal.Parse(Field.Text);
-            operation = "+";
-            Field.Text = "";
+            if (!string.IsNullOrEmpty(Field.Text))
+            {
+                firstNumber = decimal.Parse(Field.Text);
+                operation = "+";
+                Field.Text = "";
+            }
         }
 
         private void btn_4_Click(object sender, RoutedEventArgs e)
@@ -152,9 +155,12 @@ namespace proga2
 
         private void btn_minus_Click(object sender, RoutedEventArgs e)
         {
-            firstNumber = decimal.Parse(Field.Text);
-            operation = "-";
-            Field.Text = "";
+            if (!string.IsNullOrEmpty(Field.Text))
+            {
+                firstNumber = decimal.Parse(Field.Text);
+                operation = "-";
+                Field.Text = "";
+            }
         }
 
         private void btn_7_Click(object sender, RoutedEventArgs e)
@@ -186,9 +192,12 @@ namespace proga2
 
         private void btn_multiply_Click(object sender, RoutedEventArgs e)
         {
-            firstNumber = decimal.Parse(Field.Text);
-            operation = "*";
-            Field.Text = "";
+            if (!string.IsNullOrEmpty(Field.Text))
+            {
+                firstNumber = decimal.Parse(Field.Text);
+                operation = "*";
+                Field.Text = "";
+            }
         }
 
         private void btn_clear_Click(object sender, RoutedEventArgs e)
@@ -216,9 +225,12 @@ namespace proga2
 
         private void btn_division_Click(object sender, RoutedEventArgs e)
         {
-            firstNumber = decimal.Parse(Field.Text);
-            operation = "/";
-            Field.Text = "";
+            if (!string.IsNullOrEmpty(Field.Text))
+            {
+                firstNumber = decimal.Parse(Field.Text);
+                operation = "/";
+                Field.Text = "";
+            }
         }
     }
 }
